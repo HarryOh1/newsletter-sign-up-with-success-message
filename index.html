@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screen: {
+            xs: "375px",
+            xl: "1280px",
+          },
+          extend: {
+            colors: {
+              tomato: "hsl(4, 100%, 67%)",
+              darkSlateGrey: "hsl(234, 29%, 20%)",
+              charcoalGrey: "hsl(235, 18%, 26%)",
+              grey: "hsl(231, 7%, 60%)",
+              white: "hsl(0, 0%, 100%)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+      .temp {
+        color: hsl(4, 100%, 67%);
+        color: hsl(234, 29%, 20%);
+        color: hsl(235, 18%, 26%);
+        color: hsl(231, 7%, 60%);
+        color: hsl(0, 0%, 100%);
+      }
+      body * {
+        font-family: "Roboto", sans-serif;
+        /* border: 1px solid green; */
+      }
+    </style>
+  </head>
+  <body class="bg-darkSlateGrey">
+    <div class="max-w-[375px] bg-white mx-auto">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+
+      <div class="px-6 py-10">
+        <h1 class="text-[40px] font-bold text-darkSlateGrey">Stay updated!</h1>
+        <p class="mt-2 text-darkSlateGrey">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul class="mt-4">
+          <li class="flex items-start space-x-3 text-darkSlateGrey">
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <h3>Product discovery and building what matters</h3>
+          </li>
+          <li class="flex items-start space-x-3 text-darkSlateGrey">
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <h3>Measuring to ensure updates are a success</h3>
+          </li>
+          <li class="flex items-start space-x-3 text-darkSlateGrey">
+            <img src="./assets/images/icon-list.svg" alt="" />
+            <h3>And much more!</h3>
+          </li>
+        </ul>
+
+        <form action="#" class="mt-8">
+          <label for="" class="flex flex-col text-xs font-bold">
+            Email address
+          </label>
+          <input
+            type="email"
+            placeholder="email@company.com"
+            class="w-full p-4 mt-2 rounded-lg border-2"
+          />
+          <input
+            type="submit"
+            value="Subscribe to monthly  newsletter"
+            class="w-full p-4 rounded-lg text-white bg-darkSlateGrey mt-6"
+          />
+        </form>
+      </div>
+    </div>
+
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
+  </body>
+</html>
